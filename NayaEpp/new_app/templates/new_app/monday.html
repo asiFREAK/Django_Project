@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    {% extends 'home.html'%}
+    {% block list %}
+    <h1> WeekDays </h1>
+    <a href="/mon/">Monday</a>
+    <a href="/tues/">Tuesday</a>
+    <a href="/wed/">Wednesday</a>
+    <a href="/thur/">Thursday</a>
+    <a href="/fri/">Friday</a>
+    <a href="/sat/">Saturday</a>
+    <a href="/sun/">Sunday</a>
+    <h1> Hello, this is Monday! </h1>
+    {% endblock %}
+	<script src="index.js"></script>
+  </body>
+</html>
